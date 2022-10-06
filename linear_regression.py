@@ -1,3 +1,5 @@
+datapoints = [(1, 2), (2, 0), (3, 4), (4, 4), (5, 3)]
+
 def get_y(m, b, x):
     y = m*x + b
     return y
@@ -13,8 +15,6 @@ def calculate_error(m, b, point):
 # print(calculate_error(1, 0, (3, 4)))
 # print(calculate_error(1, -1, (3, 3)))
 # print(calculate_error(-1, 1, (3, 3)))
-
-datapoints = [(1, 2), (2, 0), (3, 4), (4, 4), (5, 3)]
 
 def calculate_all_error(m, b, points):
     total_error = 0
@@ -44,4 +44,10 @@ for m in possible_ms:
             best_b = b
             smallest_error = error
 
-print(best_m, best_b, smallest_error)
+# print(best_m, best_b, smallest_error)
+
+m = 0.3
+b = 1.7
+x = 6
+test = get_y(m, b, x)
+print(test)
