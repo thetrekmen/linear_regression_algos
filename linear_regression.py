@@ -49,5 +49,5 @@ for m in possible_ms:
 m = 0.3
 b = 1.7
 x = 6
-test = get_y(m, b, x)
-print(test)
+final = get_y(m, b, x)
+print(final)
